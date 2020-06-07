@@ -90,7 +90,8 @@ function _set_php_package() {
         8)
             _install_status 1 "${DESC} and php5 are not supported. Please upgrade." ;;
         *)
-            _install_status 1 "${DESC} is unsupported. Please install on a supported distro." ;;
+            php_package="php7.4-cgi"
+            phpcgiconf="/etc/php/7.4/cgi/php.ini" ;;
     esac
 }
 
