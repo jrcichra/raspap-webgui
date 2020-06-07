@@ -78,7 +78,7 @@ function _get_linux_distro() {
 # Sets php package option based on Linux version, abort if unsupported distro
 function _set_php_package() {
     case $RELEASE in
-        18.04|19.10) # Ubuntu Server
+        18.04|19.10|20.04) # Ubuntu Server
             php_package="php7.4-cgi"
             phpcgiconf="/etc/php/7.4/cgi/php.ini" ;;
         10*)
